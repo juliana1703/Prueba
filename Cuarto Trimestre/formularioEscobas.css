@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #83EB96, #3A9AE8);
+}
+
+.ContenedorG {
+  background-color: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Botón de regreso */
+.Regresar {
+  background-color: #2CDB35;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Título principal */
+.Principal h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.subtitulo {
+  font-size: 16px;
+  color: #555;
+  margin-top: 0;
+}
+
+/* Tabla */
+.table thead th {
+  background-color: #f2f2f2;
+  font-size: 13px;
+  color: #888;
+  text-align: left;
+}
+
+.table tbody td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.table tbody td strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+
+button.btn {
+  font-size: 16px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+/* Modal Bootstrap */
+.modal-content {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header, .modal-body, .modal-footer {
+  padding: 20px;
+}
+
+.modal-title {
+  font-weight: bold;
+  color: #222;
+}
+
+.modal-body input.form-control {
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/* Botones del modal */
+.modal-footer .btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+}

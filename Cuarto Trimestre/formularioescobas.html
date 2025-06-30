@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="formularioEscobas.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="ContenedorG">
+        <div  class="row">
+            <div class="col-12 text-start">
+     <div class="botonsalir">
+        <button id="BotonDevolver" class="Regresar">←</button>
+     </div>
+  </div>
+</div>
+
+<main class="container my-3">
+   <div class="row">
+    <div class="col-12 text-center">
+       <h1>Productos Escobas</h1>
+       <p class="subtitulo">Lista de Escobas suaves</p>
+    </div>
+  </div>
+</main>
+
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Marca</th>
+                        <th>Stock</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ECSD001</td>
+                        <td><strong>Escoba super Dana</strong></td>
+                        <td>RD</td>
+                        <td>203</td>
+                        <td><strong>$10.000</strong></td>     
+                    </tr>
+                   <tr>
+                    <td>ESI002</td>
+                    <td><strong>Escoba imperial</strong></td>
+                      <td>DistryAseo</td>
+                     <td>57</td>
+                     <td><strong>$8.000</strong></td>   
+                    </tr>
+                 <tr>
+                    <td>EZP003</td>
+                     <td><strong>Escoba zamora plus Blanca</strong></td>
+                     <td>RD</td>
+                     <td>104</td>
+                     <td><strong>$10.00</strong></td>     
+                 </tr>
+                 <tr>
+                    <td>ESP004</td>
+                    <td><strong>Escoba primavera</strong></td>
+                    <td>Cardi aseo</td>
+                    <td>12</td>
+                    <td><strong>$12.000</strong></td>     
+                </tr>
+                <tr>
+                    <td>ECM005</td>
+                    <td><strong>Escoba monalisa</strong></td>
+                    <td>RDe</td>
+                    <td>23</td>
+                    <td><strong>$10.000</strong></td>     
+                </tr>
+                </tbody>
+            </table>
+    </div>
+
+
+ <div class="container mt-4">
+  <div class="row justify-content-center gy-2">
+    <div class="col-12 col-sm-6 col-md-3 text-center">
+      <button id="Agregarp" class="btn btn-success w-100">Agregar Productos</button>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 text-center">
+      <button id="Editar" class="btn btn-warning w-100">Editar Inventario</button>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 text-center">
+      <button id="controlstock" class="btn btn-info w-100">Control de Stock</button>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 text-center">
+      <button id="Eliminar" class="btn btn-danger w-100">Eliminar Producto</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="ventanita" tabindex="-1" aria-labelledby="agrearp" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    
+      <div class="modal-header">
+        <h5 class="modal-title" id="agrearp">Agregar nuevo producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      
+      <div class="modal-body">
+        <form id="formularioProducto">
+          <div class="mb-3">
+            <label for="codigo" class="form-label">Código</label>
+            <input type="text" id="codigo" class="form-control" placeholder="Código">
+          </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre del Producto</label>
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre del producto">
+          </div>
+          <div class="mb-3">
+            <label for="marca" class="form-label">Marca</label>
+            <input type="text" id="marca" class="form-control" placeholder="Marca del producto">
+          </div>
+          <div class="mb-3">
+            <label for="stock" class="form-label">Stock</label>
+            <input type="number" id="stock" class="form-control" placeholder="Stock">
+          </div>
+          <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="text" id="precio" class="form-control" placeholder="Precio del producto">
+          </div>
+        </form>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" id="Guardar" class="btn btn-success">Guardar</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    
+    </div>
+  </div>
+</div>
+<script src="bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
